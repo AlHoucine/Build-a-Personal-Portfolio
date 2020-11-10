@@ -33,18 +33,30 @@ body{
   margin: 0em;
 }
 .nav-link:hover{
-background-color: black;
+  background-color: black;
 }
 
 #welcome-section{
   display: flex;
+  flex-direction: column;
+  margin-top: 60px;
   background-color: #073b4c;
   height: 100vh;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   color: aliceblue;
   font-family: sans-serif;
   font-size: 25pt;
+ }
+ .cert{
+   display: block;
+   margin-bottom: 40px;
+   padding: 22px;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 16pt;
+   border-style: solid;
+   border-width: 4px;
+   border-color: #6a040f;
  }
  .job{
   font-family: 'Open Sans', sans-serif;
@@ -85,7 +97,11 @@ background-color: black;
   flex-direction: column-reverse;
   border-radius: 5%;
   align-items: stretch;
-
+}
+.project-tile .fa-code{visibility: hidden;}
+.project-tile:hover .fa-code{visibility: visible;}
+.project-tile:hover .project-link{
+  background-color: black;
 }
 .project-link{
   text-align: center;
@@ -95,9 +111,6 @@ background-color: black;
   color: aliceblue;
   height: 40px;
   padding-top: 10px;
-}
-.project-link:hover{
-  background-color: black;
 }
 .title-prj{
   display: flex;
@@ -164,7 +177,8 @@ height: 18vh;
 }
 .cont-div>a{
   font-family: 'Roboto', sans-serif;
-  font-size: 16pt;;
+  font-size: 16pt;
+  padding: 4px;
 }
 hr{
   border: solid #9d0208 3px;
