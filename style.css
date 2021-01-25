@@ -3,6 +3,7 @@ body{
   color: aliceblue;
   scroll-behavior: smooth;
   margin: 0%;
+  
 }
 *{box-sizing: border-box;}
 hr{
@@ -78,7 +79,7 @@ hr{
 img{
   display: block;
   width: 100%;
-  height: 100%;
+  height:100%;
   margin: 0em;
 }
 .project-link{
@@ -89,9 +90,7 @@ img{
   text-align: center;
   text-decoration: none;
   font-size: 3vw;
-}
-.project-link:visited{
-    color: aliceblue;
+  color: aliceblue;
 }
 /* Span Decoration */
 .section-title .fa, #welcome-section span, #welcome-section .fa, .contact-title .fa{
